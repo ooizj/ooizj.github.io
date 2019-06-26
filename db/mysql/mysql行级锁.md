@@ -7,10 +7,10 @@
 select ... for update ; 
 ```
 
-假设在事物A中执行了“select ... for update”，对应行“R”：
-case 1，事物B中也执行了“select ... for update”，也对应行“R”，那事物B就会在此查询处就如等待，只能等待事物A提交后，事物B才能获取到查询的返回结果。
-case 2，事物B中执行了“update ...”，也对于行“R”，则同上
-case 3，事物B执行了“select ...”，也对于行“R”，不会等待，能直接能获取查询结果
+假设在事物A中执行了“select ... for update”，对应行“R”：  
+case 1，事物B中也执行了“select ... for update”，也对应行“R”，那事物B就会在此查询处就如等待，只能等待事物A提交后，事物B才能获取到查询的返回结果。  
+case 2，事物B中执行了“update ...”，也对于行“R”，则同上  
+case 3，事物B执行了“select ...”，也对于行“R”，不会等待，能直接能获取查询结果  
 
 e.g.
 ```sql
