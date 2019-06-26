@@ -1,5 +1,6 @@
 
-## ant是一个可用于很方便灵活构建java application的工具
+## ant demo
+ant是一个可用于很方便灵活构建java application的工具  
 
 ant里面有很多“task”，可以用于执行各种不同的操作  
 如：“mkdir”：创建目录；“javac”：编译成class ...  
