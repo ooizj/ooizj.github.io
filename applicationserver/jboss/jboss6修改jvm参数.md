@@ -59,8 +59,8 @@ fi
 ```
 3，修改应用启动脚本
 ```shell
-CUSTOMER_JAVA_OPTS="-Xms512m -Xmx3072m -XX:MaxPermSize=512m"
-# 启动命令
+CUSTOMER_JAVA_OPTS="-Xmx3072m -XX:MaxPermSize=512m"
+# 启动应用
 #如 nohup bin/standalone.sh -Djboss.server.base.dir=xx/jboss_home/app1 -Djboss.socket.binding.port-offset=1 &
 ```
 
