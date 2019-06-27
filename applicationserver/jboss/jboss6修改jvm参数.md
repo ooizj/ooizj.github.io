@@ -13,7 +13,7 @@ JAVA_OPTS="-Xms1303m -Xmx2048m -XX:MaxPermSize=256m"
 找到类似如下部分直接修改“Xmx”  
 ```shell
 if [ "x$JAVA_OPTS" = "x" ]; then
-   JAVA_OPTS="-Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true"
+   JAVA_OPTS="-Xms1303m -Xmx2048m -XX:MaxPermSize=100m -Djava.net.preferIPv4Stack=true"
    JAVA_OPTS="$JAVA_OPTS -Djboss.modules.system.pkgs=$JBOSS_MODULES_SYSTEM_PKGS -Djava.awt.headless=true"
    JAVA_OPTS="$JAVA_OPTS -Djboss.modules.policy-permissions=true"
 else
