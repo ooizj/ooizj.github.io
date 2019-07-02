@@ -21,6 +21,7 @@
     * [httpd2.4简单安装实用](httptool/httpd/httpd2.4-jian-dan-an-zhuang-shi-yong.md)
     * [httpd安装ssl模块](httptool/httpd/httpd-an-zhuang-ssl-mo-kuai.md)
 * [linux](linux/README.md)
+  * [vi常用命令](linux/vi-chang-yong-ming-ling.md)
   * [linux防火墙设置](linux/linux-fang-huo-qiang-she-zhi.md)
   * [linux 常用命令](linux/linux-chang-yong-ming-ling.md)
 * [javabuildtool](javabuildtool/README.md)
