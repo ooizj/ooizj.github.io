@@ -1,6 +1,7 @@
-## cocos碰撞检测
+# cocos碰撞检测
 
-### 1，启用全局碰撞检测
+## 1，启用全局碰撞检测
+
 ```javascript
 // 获取碰撞检测系统
 var manager = cc.director.getCollisionManager();
@@ -15,12 +16,15 @@ manager.enabledDebugDraw = true;
 manager.enabledDrawBoundingBox = true;
 ```
 
-### 2，添加碰撞分组
+## 2，添加碰撞分组
+
 ![image](https://raw.githubusercontent.com/ooizj/ooizj.github.io/master/gameengine/cocos2d/img/%E6%B7%BB%E5%8A%A0%E5%88%86%E7%BB%84.PNG)
 
-### 3，对Node设置刚才添加的碰撞分组并新增包围盒组件
+## 3，对Node设置刚才添加的碰撞分组并新增包围盒组件
+
 ![image](https://raw.githubusercontent.com/ooizj/ooizj.github.io/master/gameengine/cocos2d/img/%E8%AE%BE%E7%BD%AE%E5%88%86%E7%BB%84.PNG)  
 使用脚本动态设置分组并新增包围盒
+
 ```javascript
 let bulletNode = new cc.Node() ; 
 bulletLayer.addChild(bulletNode) ; 
@@ -41,11 +45,11 @@ bulletBox.size = new cc.size(16, 16) ;
 //发射
 bulletNode.runAction(
     cc.bezierTo(2, [cc.v2(startX, startY), cc.v2(500, 800), cc.v2(800, 100)])
-) ; 
+) ;
 ```
 
+## 4，对Node添加脚本用来添加碰撞事件处理方法
 
-### 4，对Node添加脚本用来添加碰撞事件处理方法
 ```javascript
 /**
  * 当碰撞产生的时候调用
@@ -93,5 +97,4 @@ onCollisionExit: function (other, self) {
     // cc.log('enemy exit');
 }
 ```
-
 

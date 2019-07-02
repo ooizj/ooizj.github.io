@@ -1,6 +1,8 @@
+# linux防火墙设置
+
 ### linux防火墙设置
 
-```cmd
+```text
 --查看防火墙状态
 firewall-cmd --state
 
@@ -12,5 +14,5 @@ firewall-cmd --zone=public --add-port=80/tcp --permanent
 
 --重启防火墙
 systemctl restart  firewalld
-
 ```
+

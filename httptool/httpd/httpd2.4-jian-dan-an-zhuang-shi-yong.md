@@ -1,9 +1,12 @@
+# httpd2.4简单安装实用
 
-### httpd2.4的安装
+## httpd2.4的安装
+
 系统：centos7
 
-### 安装
-```cmd
+## 安装
+
+```text
 #安装httpd
 yum install httpd
 
@@ -14,9 +17,9 @@ systemctl enable httpd
 systemctl start httpd
 ```
 
-### httpd常用命令
+## httpd常用命令
 
-```cmd
+```text
 #启动httpd
 service httpd start
 
@@ -27,9 +30,9 @@ service httpd stop
 service httpd restart
 ```
 
+## httpd工作目录
 
-### httpd工作目录
-```cmd
+```text
 #主配置文件
 /etc/httpd/conf/httpd.conf
 
@@ -38,21 +41,21 @@ service httpd restart
 
 #默认日志目录
 /etc/httpd/logs
-
 ```
 
-### 配置反向代理
-假设有个应用访问路径为 “http://127.0.0.1:8877/fileserver/”  
-现在想用 “http://127.0.0.1:8080/fileserver/” 的地址去访问它，则可以添加反向代理来实现  
+## 配置反向代理
 
-在“/etc/httpd/conf.d”目录新增“my.conf”，文件内容如下  
-```xml
+假设有个应用访问路径为 “[http://127.0.0.1:8877/fileserver/”](http://127.0.0.1:8877/fileserver/”)  
+现在想用 “[http://127.0.0.1:8080/fileserver/”](http://127.0.0.1:8080/fileserver/”) 的地址去访问它，则可以添加反向代理来实现
 
+在“/etc/httpd/conf.d”目录新增“my.conf”，文件内容如下
+
+```markup
 #监听“8080”端口
 Listen 8080
 
 <VirtualHost *:8080>
-    
+
     ProxyRequests Off
     <Proxy *>
     Order deny,allow
@@ -60,22 +63,24 @@ Listen 8080
     </Proxy>
 
     ProxyPreserveHost On
-	
+
     ProxyPass /fileserver/ http://127.0.0.1:8877/fileserver/
     ProxyPassReverse /fileserver/ http://127.0.0.1:8877/fileserver/
 
 
 </VirtualHost>
-
 ```
+
 重启httpd使之生效
-```cmd
+
+```text
 service httpd restart
 ```
 
-然后在其他机器通过 “http://ip:8080/fileserver/” 访问看看能否成功  
-如果访问不到可以看看防火墙是否开启了8080端口访问权限  
-```cmd
+然后在其他机器通过 “[http://ip:8080/fileserver/”](http://ip:8080/fileserver/”) 访问看看能否成功  
+如果访问不到可以看看防火墙是否开启了8080端口访问权限
+
+```text
 --查看防火墙状态
 firewall-cmd --state
 
@@ -87,7 +92,8 @@ systemctl restart  firewalld
 ```
 
 如果访问之后报“service unavailable”的错误，可以通过以下设置试试
-```cmd
+
+```text
 /usr/sbin/setsebool -P httpd_can_network_connect 1
 ```
 

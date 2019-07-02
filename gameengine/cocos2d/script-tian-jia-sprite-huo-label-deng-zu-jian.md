@@ -1,12 +1,11 @@
-
-### 通过script添加sprite、label等
+# 通过script添加sprite、label等
 
 添加各种组件的方式步骤如下  
 1，创建一个Node  
 2，Node添加组件  
-3，添加Node  
+3，添加Node
 
-```js
+```javascript
 //添加一个sprite、一个label和绘图组件示例  
 cc.Class({
     extends: cc.Node,
@@ -17,7 +16,7 @@ cc.Class({
             type: cc.Texture2D
         }
     },
-    
+
     init () {        
 
         //添加sprite
@@ -36,7 +35,7 @@ cc.Class({
         n1.x = 70 ; 
         n1.y = 100 ; 
         this.addChild(n1) ; 
-        
+
         //添加绘图组件
         const BOUND = 10 ; 
         let n3 = new cc.Node() ; 
@@ -52,5 +51,5 @@ cc.Class({
 
     }
 });
-
 ```
+

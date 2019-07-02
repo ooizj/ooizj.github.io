@@ -1,7 +1,6 @@
+# 通过script进行绘画
 
-### 通过script进行绘画
-
-```js
+```javascript
 //绘制一个矩形
 const BOUND = 10 ; 
 let n1 = new cc.Node() ; 
@@ -14,7 +13,6 @@ ctx.lineTo(this.chunkWidth-BOUND, this.chunkHeight-2*BOUND);
 ctx.lineTo(BOUND, this.chunkHeight-2*BOUND);
 ctx.lineTo(BOUND, BOUND);
 ctx.stroke();
-this.addChild(n1) ; 
-
+this.addChild(n1) ;
 ```
 
