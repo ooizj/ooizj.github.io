@@ -7,6 +7,7 @@
     * [mysql常用变量](db/mysql/mysql-chang-yong-bian-liang.md)
     * [mysql常用函数](db/mysql/mysql-chang-yong-han-shu.md)
 * [kafka](kafka/README.md)
+  * [kafka客户端代码示例](kafka/untitled.md)
   * [kafka2.1服务端安装](kafka/kafka2-fu-wu-duan-an-zhuang.md)
 * [gameengine](gameengine/README.md)
   * [cocos2d](gameengine/cocos2d/README.md)
