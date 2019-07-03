@@ -2,65 +2,71 @@
 
 ## 文件移动（or改名）：
 
-```text
+```bash
 mv 源文件（or目录，多个文件or目录用空格隔开） 目标文件（or目录）
 ```
 
 ## 创建目录
 
-```text
+```bash
 mkdir 目录名
 ```
 
 ## 查看系统磁盘使用情况
 
-```text
+```bash
 df -lh
 df -m （按MB为单位）
 ```
 
 ## 查看系统内存使用情况
 
-```text
+```bash
 free -m
 free -g
 ```
 
 ## 根据名称查看进程
 
-```text
+```bash
 ps -ef|grep 名称（如：tomcat/redis/java/...）
 ```
 
 ## 查找文件
 
-```text
+```bash
 find 目录 -name 文件名（可用通配符：“*”）
 ```
 
 ## 查看文件夹下有哪些文件
 
-```text
+```bash
 ls  
 ls -a（显示所有文件，包含隐藏文件）
 ```
 
+## 查看目录大小
+
+```bash
+du -h --max-depth=1
+```
+
 ## 新增用户
 
-```text
+```bash
 useradd xiaoming
 ```
 
 ## 删除用户
 
-```text
+```bash
 userdel xiaoming  
 userdel -r（也删除home） xiaoming
 ```
 
 ## 修改文件的或目录的所有者或组
 
-```text
+```bash
 chown -R（递归处理） 用户:组 文件或目录  
 chown -R xiaoming:xxxgroup /opt/myapp  
 chown -R xiaoming /opt/myapp
@@ -68,14 +74,14 @@ chown -R xiaoming /opt/myapp
 
 ## 从一个电脑拷贝文件到另一个电脑
 
-```text
+```bash
 scp 本地文件 远程电脑用户名@远程电脑IP:远程电脑目录or文件
 scp jdk-8u181-linux-x64.tar.gz root@192.168.0.2:/opt/es/
 ```
 
 ## 查看centos版本
 
-```text
+```bash
 cat /etc/redhat-release
 ```
 
@@ -83,7 +89,7 @@ cat /etc/redhat-release
 
 \*.tar.gz/\*.tgz
 
-```text
+```bash
 tar -zxvf 压缩文件名.tar.gz
 # v 是否显示解压缩过程
 ```
