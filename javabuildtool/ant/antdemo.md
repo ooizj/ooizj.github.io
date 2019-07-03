@@ -20,7 +20,7 @@ ant中至少要有一个“target”，在执行ant命令后若不指定运行�
      project    
      description
 
-     jun.zhao                                                                
+     ooi                                                                
      ====================================================================== -->
 <project name="test-ant-project" default="jar_ant_test" basedir=".">
     <description>
