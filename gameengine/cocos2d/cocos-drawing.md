@@ -1,4 +1,4 @@
-# 通过script进行绘画
+# cocos通过script进行绘画
 
 ```javascript
 //绘制一个矩形

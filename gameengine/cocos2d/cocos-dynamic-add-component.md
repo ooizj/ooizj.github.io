@@ -1,4 +1,4 @@
-# 通过script添加sprite、label等
+# cocos通过script添加sprite、label等
 
 添加各种组件的方式步骤如下  
 1，创建一个Node  
