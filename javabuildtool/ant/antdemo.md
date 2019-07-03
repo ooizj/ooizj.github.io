@@ -12,7 +12,7 @@ ant中至少要有一个“target”，在执行ant命令后若不指定运行�
 
 假如有个工程“ant\_test”，在工程根目录下新建build.xml，如下示例
 
-```text
+```markup
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ====================================================================== 
      2018年5月4日 下午3:02:25                                                        
@@ -115,7 +115,7 @@ ant
 
 ### mkdir 创建目录
 
-```text
+```markup
 <mkdir dir="目录"/>
 ```
 
@@ -123,7 +123,7 @@ ant
 
 [更多示例](https://ant.apache.org/manual/Tasks/delete.html)
 
-```text
+```markup
 <delete dir="目录"/> <!-- 删除目录（包含子目录） -->
 <delete file="文件"/>
 <!-- 删除目录（包含子目录） -->
@@ -134,7 +134,7 @@ ant
 
 ### javac 编译成class
 
-```text
+```markup
 <!-- 先声明一个classpath -->
 <path id="build.classpath" >
     <fileset dir="jar目录">
@@ -170,7 +170,7 @@ me/ooi/test_ant
 
 java要先变成class，然后才能变成jar
 
-```text
+```markup
 <jar destfile="jar包路径">
     <fileset dir="classes目录"></fileset>
 </jar>
@@ -188,7 +188,7 @@ ant_test.jar
 
 ### war 打成war
 
-```text
+```markup
 <war destfile="war包路径" 
      compress="true" 
     webxml="web.xml文件路径">
@@ -220,7 +220,7 @@ ant_test.war
 
 ### ear 打成ear
 
-```text
+```markup
 <ear destfile="ear包路径" appxml="application.xml文件路径">
     <fileset dir="需要打成ear包的目录"></fileset>
 </ear>
