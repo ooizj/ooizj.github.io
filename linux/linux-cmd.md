@@ -94,3 +94,10 @@ tar -zxvf 压缩文件名.tar.gz
 # v 是否显示解压缩过程
 ```
 
+## 查看占用某端口应用的PID
+
+```bash
+lsof -i tcp:端口
+lsof -i tcp:10001
+```
+
