@@ -32,4 +32,5 @@
 * [applicationserver](applicationserver/README.md)
   * [jboss](applicationserver/jboss/README.md)
     * [jboss6修改jvm参数](applicationserver/jboss/jboss6-jvm-arguments.md)
+* [好用的软件](popular-soft.md)
 
