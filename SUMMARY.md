@@ -26,6 +26,8 @@
   * [vi常用命令](linux/vi-cmd.md)
   * [linux防火墙设置](linux/linux-config-firewall.md)
   * [linux 常用命令](linux/linux-cmd.md)
+* [windows](windows/README.md)
+  * [windows常用命令](windows/windows-cmd.md)
 * [javabuildtool](javabuildtool/README.md)
   * [ant](javabuildtool/ant/README.md)
     * [ant demo](javabuildtool/ant/ant-demo.md)
