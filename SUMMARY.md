@@ -9,6 +9,8 @@
 * [kafka](kafka/README.md)
   * [kafka2.1服务端安装](kafka/kafka2.1-server-install.md)
   * [kafka客户端代码示例](kafka/kafka-client-demo.md)
+* [redis](redis/README.md)
+  * [redis-server](redis/redis-server.md)
 * [gameengine](gameengine/README.md)
   * [cocos2d](gameengine/cocos2d/README.md)
     * [cocos物理系统](gameengine/cocos2d/cocos-physical-system.md)
