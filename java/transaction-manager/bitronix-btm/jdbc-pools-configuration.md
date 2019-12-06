@@ -4,7 +4,7 @@ BTM XA datasources can be created via some java code or via a BTM-specific tool 
 
 BTM XA datasources可以通过java代码或者BTM的Resource Loader来创建。
 
-#### DataSource Properties
+## DataSource Properties
 
 **acquireIncrement**
 
