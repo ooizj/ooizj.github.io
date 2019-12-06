@@ -3,6 +3,7 @@
 * [README](README.md)
 * [db](db/README.md)
   * [mysql](db/mysql/README.md)
+    * [mysqlAllDataTypeTableDemo](db/mysql/mysqlalldatetypetabledemo.md)
     * [mysql行级锁](db/mysql/mysql-row-lock.md)
     * [mysql常用变量](db/mysql/mysql-common-variable.md)
     * [mysql常用函数](db/mysql/mysql-common-function.md)
