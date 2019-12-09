@@ -42,6 +42,7 @@
 * [java](java/README.md)
   * [transaction-manager](java/transaction-manager/README.md)
     * [bitronix-btm](java/transaction-manager/bitronix-btm/README.md)
+      * [Transaction manager configuration](java/transaction-manager/bitronix-btm/transaction-manager-configuration.md)
       * [JDBC pools configuration](java/transaction-manager/bitronix-btm/jdbc-pools-configuration.md)
   * [quartz1.8.6](java/quartz1.8.6.md)
 
