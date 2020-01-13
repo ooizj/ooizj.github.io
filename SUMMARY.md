@@ -8,6 +8,7 @@
     * [mysql常用变量](db/mysql/mysql-common-variable.md)
     * [mysql常用函数](db/mysql/mysql-common-function.md)
 * [kafka](kafka/README.md)
+  * [spring-integration-kafka-1.3.0.RELEASE](kafka/spring-integration-kafka-1.3.0.release.md)
   * [kafka2.1服务端安装](kafka/kafka2.1-server-install.md)
   * [kafka客户端代码示例](kafka/kafka-client-demo.md)
 * [redis](redis/README.md)
