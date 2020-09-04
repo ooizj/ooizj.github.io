@@ -20,7 +20,7 @@ GRANT CREATE VIEW TO NEW_USER_NAME;
 
 ### 创建表空间并分配给新用户
 ```sql
-CREATE TABLESPACE NEW_USER_NAME_data DATAFILE 'tbs_NEW_USER_NAME_data.dat' SIZE 100M AUTOEXTEND ON;
-alter user NEW_USER_NAME default tablespace NEW_USER_NAME_data;  
-alter user NEW_USER_NAME quota unlimited on NEW_USER_NAME_data;
+CREATE TABLESPACE NEW_USER_NAME_DATA DATAFILE 'tbs_NEW_USER_NAME_DATA.dat' SIZE 100M AUTOEXTEND ON;
+alter user NEW_USER_NAME default tablespace NEW_USER_NAME_DATA;  
+alter user NEW_USER_NAME quota unlimited on NEW_USER_NAME_DATA;
 ```
