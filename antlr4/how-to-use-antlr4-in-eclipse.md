@@ -85,7 +85,7 @@
 
 修改Options下的Directory“./target/generated-sources/”
 
-{% hint style="info" %}
+{% hint style="success" %}
 下载结尾为“complete”的jar，这个jar包含了antlr-runtime和antlr-tool
 
 下载的jar包最好放到“C:\Users\xx\(用户名\)\AppData\Local\Temp”
