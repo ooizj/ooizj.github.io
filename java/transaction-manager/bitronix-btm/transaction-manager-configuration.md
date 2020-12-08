@@ -75,7 +75,9 @@ A stable ASCII string that must uniquely identify this TM instance. It must not 
       </td>
     </tr>
   </tbody>
-</table>#### bitronix.tm.2pc.async
+</table>
+
+#### bitronix.tm.2pc.async
 
 Should two phase commit be executed asynchronously? Asynchronous two phase commit will improve 2PC execution time when there are many resources enlisted in transactions but can be very CPU intensive when used on JDK 1.4 without the java.util.concurrent backport implementation available on the classpath. It also makes debugging more complex.
 
