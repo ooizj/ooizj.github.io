@@ -49,4 +49,6 @@
   * [quartz1.8.6](java/quartz1.8.6.md)
 * [antlr4](antlr4/README.md)
   * [在eclipse里面使用antlr4](antlr4/how-to-use-antlr4-in-eclipse.md)
+* [go](go/README.md)
+  * [用vs code作为go的开发环境](go/vs-code-as-ide.md)
 
