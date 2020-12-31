@@ -12,11 +12,11 @@
 
 ```text
 Manifest-Version: 1.0
-Class-Path: lib\activation-1.1.jar
-  lib\aopalliance-1.0.jar
+Class-Path: lib\xxx-1.1.jar
+  lib\xxxx-1.0.jar
   lib\asm-3.3.1.jar
   lib\cglib-2.2.2.jar
-Main-Class: com.timanetworks.workflow.monitor.App
+Main-Class: xxx.xx.App
 ```
 
 #### 程序中从classpath中获取的配置文件，都需要放到运行的jar的根目录
