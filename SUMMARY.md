@@ -42,6 +42,7 @@
     * [jboss6修改jvm参数](applicationserver/jboss/jboss6-jvm-arguments.md)
 * [好用的软件](popular-soft.md)
 * [java](java/README.md)
+  * [export jar](java/export-jar.md)
   * [transaction-manager](java/transaction-manager/README.md)
     * [bitronix-btm](java/transaction-manager/bitronix-btm/README.md)
       * [Transaction manager configuration](java/transaction-manager/bitronix-btm/transaction-manager-configuration.md)
