@@ -40,7 +40,6 @@
 * [applicationserver](applicationserver/README.md)
   * [jboss](applicationserver/jboss/README.md)
     * [jboss6修改jvm参数](applicationserver/jboss/jboss6-jvm-arguments.md)
-* [好用的软件](popular-soft.md)
 * [java](java/README.md)
   * [export jar](java/export-jar.md)
   * [transaction-manager](java/transaction-manager/README.md)
