@@ -60,5 +60,5 @@
   * [mongoDB structure](mongodb/mongodb-structure.md)
   * [mongoDB java API](mongodb/mongodb-java-api.md)
   * [mongoDB springboot](mongodb/mongodb-springboot.md)
-* [Netty](netty/README.md)
-  * [Hello world](netty/hello-world.md)
+* [Netty4](netty4/README.md)
+  * [Hello world](netty4/hello-world.md)
