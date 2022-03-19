@@ -62,3 +62,8 @@
   * [mongoDB springboot](mongodb/mongodb-springboot.md)
 * [Netty4](netty4/README.md)
   * [Hello world](netty4/hello-world.md)
+  * [Channel](netty4/channel.md)
+  * [EventLoop](netty4/eventloop.md)
+  * [ChannelFuture](netty4/channelfuture.md)
+  * [ChannelHandler](netty4/channelhandler.md)
+  * [ChannelPipeline](netty4/channelpipeline.md)
