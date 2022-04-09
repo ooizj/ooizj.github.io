@@ -65,5 +65,5 @@
   * [ChannelPipeline](netty4/channelpipeline.md)
   * [Channel](netty4/channel.md)
   * [EventLoop](netty4/eventloop.md)
-  * [ChannelFuture](netty4/channelfuture.md)
+  * [ChannelFuture\&ChannelPromise](netty4/channelfuture-and-channelpromise.md)
   * [ChannelHandler](netty4/channelhandler.md)
