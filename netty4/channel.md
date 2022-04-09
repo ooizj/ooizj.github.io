@@ -18,7 +18,7 @@ Channel接口基本的 I/O 操作（bind()、connect()、read()和 write()），
 
 ### ChannelHandler在Channel中的包含关系如图
 
-![](<../.gitbook/assets/image (27).png>)
+![](<../.gitbook/assets/image (28).png>)
 
 ### Channel.write()
 
@@ -26,11 +26,11 @@ Channel接口基本的 I/O 操作（bind()、connect()、read()和 write()），
 
 当调用ChannelHandlerContext.write()的时候除了开始是从该ChannelHandlerContext的ChannelHandler的前一个OutboundHandler.write()开始，其他和Channel.write()一样，如图
 
+![](<../.gitbook/assets/image (27).png>)
+
 ![](<../.gitbook/assets/image (26).png>)
 
-![](<../.gitbook/assets/image (25).png>)
-
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (21).png>)
 
 ### Channel.read()
 
@@ -38,11 +38,11 @@ Channel接口基本的 I/O 操作（bind()、connect()、read()和 write()），
 
 走到最后会提交一个read任务到EventLoop，有数据的时候EventLoop会调用第一个InboundHandler.read()，如果第一个InboundHandler.read()方法中有调用ChannelHandlerContext.read()，会调用第二个InboundHandler.read()，后面的InboundHandler也一样；否则不会经过其他InboundHandler。如图
 
-![](<../.gitbook/assets/image (28).png>)
+![](<../.gitbook/assets/image (29).png>)
 
-![](<../.gitbook/assets/image (21).png>)
+![](<../.gitbook/assets/image (22).png>)
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (20).png>)
 
 
 

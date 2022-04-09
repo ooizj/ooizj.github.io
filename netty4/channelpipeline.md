@@ -1,10 +1,12 @@
 # ChannelPipeline
 
-ChannelPipeline是ChannelHandler的容器，一个ChannelPipeline包含多个ChannelHandler，如下图所示
+ChannelPipeline是ChannelHandler的容器，一个ChannelPipeline包含多个ChannelHandler，ChannelHandler包含在ChannelHandlerContext中，如图
 
-![](<../.gitbook/assets/image (22).png>)
+![](<../.gitbook/assets/image (19).png>)
 
-ChannelPipeline中包含HeadChannelHandlerContext和TailChannelHandlerContext分别作为头和尾。向ChannelPipeline添加一个ChannelHandler的时候，会创建一个新的ChannelHandlerContext加入到链中，ChannelHandler包含在ChannelHandlerContext中，如下图所示
+![](<../.gitbook/assets/image (23).png>)
 
-![](<../.gitbook/assets/image (24).png>)
+ChannelPipeline中的ChannelHandlerContext是按链式存储的，ChannelPipeline包含了自动创建的HeadChannelHandlerContext和TailChannelHandlerContext分别作为链的头和尾。向ChannelPipeline添加一个ChannelHandler的时候，会创建一个新的ChannelHandlerContext加入到链中，ChannelHandler包含在ChannelHandlerContext中，如图
+
+![](<../.gitbook/assets/image (25).png>)
 
