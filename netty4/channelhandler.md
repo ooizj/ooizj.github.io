@@ -10,7 +10,7 @@ ChannelOutboundHandler中的方法通常是自己的代码发起的调用（如�
 
 在读写数据时在ChannelHandler之间的流转如图
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 ### ChannelHandler示例
 
