@@ -42,7 +42,7 @@ Channel接口基本的 I/O 操作（bind()、connect()、read()和 write()），
 
 ![](<../.gitbook/assets/image (22).png>)
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 
 
