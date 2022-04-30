@@ -11,6 +11,7 @@ Scheduler.h
 #include <functional>
 #include <vector>
 
+using namespace std;
 using namespace std::placeholders;
 
 class CallbackInfo {
