@@ -1,7 +1,7 @@
 ## 如何给EmuDeck设置代理
 注：首先需要有代理服务器  
 
-以文本文件的方式编辑下载的EmuDeck.desktop  
+以文本文件的方式编辑下载的EmuDeck.desktop(或者右键属性里面修改，所有程序都一样)  
 在“Exec=”后面新增如下代理设置
 ```
 export http_proxy="http://代理服务ip:代理服务端口" && export https_proxy="http://代理服务ip:代理服务端口" && 
@@ -20,3 +20,11 @@ Type=Application
 StartupNotify=false
 
 ```
+
+## 运行dead or alive 5
+添加运行参数，参考https://www.protondb.com/app/311730
+```shell
+PROTON_NO_ESYNC=1 PROTON_NO_FSYNC=1 %command%
+```
+
+
